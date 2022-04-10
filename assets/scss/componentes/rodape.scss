@@ -1,0 +1,67 @@
+@use "../utilitarios" as *;
+
+.rodape{
+    background-color: black;
+    padding: 6%;
+    border-top-right-radius: 5rem;
+    display: flex;
+    align-items: flex-start;   
+    @include celular{
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img{
+
+    }
+    &__conteiner{
+        display: flex;
+        @include celular{
+            flex-direction: column;
+            margin-top: 2rem;
+    }
+}
+    &__menu{
+        display: flex;
+        margin-left: 5rem;
+        @include celular{
+            flex-direction: column;
+            margin-left: 0;
+
+        }
+    }
+    &__itens{
+        color: $branco;
+        @include Overpass-300;
+        margin-left: 75%;
+        @include celular{
+            margin-left: 0;
+        }
+        
+        
+
+    }
+    &__cabecalho{
+        margin-bottom: 2.0rem;
+        @include celular{
+            margin-top: 2.5rem;
+        }
+
+    }
+    &__item{
+        margin-bottom: 1rem;
+        @include celular{
+            text-align: center;
+        }
+
+    }
+    &__link{
+        color: $azul-cinza;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+
+        }
+
+
+    }
+}

@@ -1,0 +1,98 @@
+@use "../utilitarios" as *;
+
+.h-menu{
+    background-color: $branco;
+    position: absolute;
+    top: 100px;
+    width: 80vw;
+    padding: 1.5rem 0;
+    border-radius: 0.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    &__itens{
+
+    }
+    &__item{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        &::after{
+            content: url(../images/icon-arrow-dark.svg);
+            margin-left: 0.5rem;
+        }
+        &:last-child{
+            margin: 0
+        }
+
+    }
+    &__link{
+        @include Overpass-600;
+        text-decoration: none;
+        color: $azul-escuro-dark;
+        
+    }
+    &__tela{
+        background-color: $azul-cinza;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        opacity: 0.5;
+        
+
+    }
+    &__tela-item{
+        text-align: center;
+        margin-bottom: 1rem;
+        &:last-child{
+            margin: 0;
+        }
+
+    }
+    &__tela-link{
+        text-decoration: none;
+        color: $azul-escuro-dark;
+        @include Overpass-600;
+        opacity: 1;
+
+    }
+    &__conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__login{
+        color: $azul-escuro-dark;
+        @include Overpass-600;
+        text-decoration: none;
+        margin-bottom: 1rem;
+
+    }
+    &__botao{
+        border: none;
+        padding: .75rem 1.8rem;
+        border-radius: 1rem;
+        @include Overpass-600;
+        color: $branco;
+        background-image: linear-gradient(45deg, $plano-de-fundo-gradiente1, $plano-de-fundo-gradiente2);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:$azul-cinza;
+    background-color:$azul-cinza;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.appearOpacity1{
+    animation: appearOpacity1 300ms ease-in-out forwards;
+}
+.disappearOpacity0{
+    animation: disappearOpacity0 300ms ease-in-out forwards;
+}
+.visibilityHidden{
+    visibility: hidden;
+}

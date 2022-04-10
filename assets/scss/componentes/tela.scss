@@ -1,0 +1,39 @@
+@use "../utilitarios" as *;
+
+.tela{
+    background-color: $branco;
+    padding: 1.5rem 1rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 40px;
+    box-shadow: 19px 29px 75px -38px;
+
+    &__item{
+        margin-bottom: 0.5rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+    }
+    &__link{
+        text-decoration: none;
+        color: $azul-cinza-dark;
+        @include Overpass-600;
+        &:hover{
+            color: $azul-escuro-dark;
+        }
+
+    }
+}
+.um{
+    left: 120px;
+}
+.dois{
+    left: 160px;
+}
+.tres{
+    left: 200px;
+}
+.displayNone{
+    display:none;
+}

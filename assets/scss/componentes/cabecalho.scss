@@ -1,0 +1,131 @@
+@use "../utilitarios" as *;
+
+.cabecalho{
+    background-color: $vermelho-claro;
+    background-image: url(../images/bg-pattern-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -600px -1350px;
+    padding: 2.5rem;
+    height: 100vh;
+    border-bottom-left-radius: 5rem;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__img{
+        margin-right: 3rem;
+    }
+    &__itens{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__item{
+        @include celular{
+            display: none;
+        }
+    }
+    &__link{
+        transition: all 300ms ease-in-out;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: url(../images/icon-arrow-light.svg);
+            margin-left: 0.5rem;
+        }
+        
+        text-decoration: none;
+        color: $branco;
+        margin-right: 2rem;
+        @include Overpass-300;
+    }
+    &__conteiner-botao-1{
+        display: flex;
+        align-items: center;
+        @include celular{
+            display: none;
+        }
+
+    }
+    &__login{
+        text-decoration: none;
+        color: $branco;
+        margin-right: 2rem;
+    }
+    &__botao{
+        padding: .6rem 1.2rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: $branco;
+        @include Overpass-600;
+        color: $vermelho-claro;
+        font-size: 100%;
+        transition: all 300ms ease-in-out;
+        margin-right: 0.5rem;
+        &:hover{
+            background-color: $vermelho-muito-claro;
+            color: $branco;
+            cursor: pointer;
+
+        }
+
+    }
+    &__botao-1{
+        padding: .6rem 1.2rem;
+        border: none;
+        border-radius: 1rem;
+        border: 1px $branco solid;
+        @include Overpass-600;
+        background-color: transparent;
+        color: $branco;
+        font-size: 100%;
+        transition: all 300ms ease-in-out;
+        &:hover{
+            background-color: $branco;
+            color: $vermelho-claro;
+            cursor: pointer;
+
+            
+        }
+
+    }
+    &__hamburger{
+        display: none;
+        @include celular{
+            display: block;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    &__conteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+
+    }
+    &__titulo{
+        text-align: center;
+        font-size: 3rem;
+        @include Overpass-300;
+        color: $branco;
+        margin-bottom: 1.2rem;
+
+    }
+    &__subtitulo{
+        text-align: center;
+        @include Overpass-300;
+        color: $branco;
+        margin-bottom: 2rem;
+
+    }
+    &__conteiner-botao-2{
+
+    }
+}

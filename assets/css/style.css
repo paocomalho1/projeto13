@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes slide-in-2 {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+@keyframes slide-out-2 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 0.75;
+    visibility: visible;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 0.75;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes appearOpacity1 {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes disappearOpacity0 {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.cabecalho {
+  background-color: #ff525d;
+  background-image: url(../images/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -600px -1350px;
+  padding: 2.5rem;
+  height: 100vh;
+  border-bottom-left-radius: 5rem;
+}
+.cabecalho__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalho__img {
+  margin-right: 3rem;
+}
+.cabecalho__itens {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 960px) {
+  .cabecalho__item {
+    display: none;
+  }
+}
+.cabecalho__link {
+  transition: all 300ms ease-in-out;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+}
+.cabecalho__link::after {
+  content: url(../images/icon-arrow-light.svg);
+  margin-left: 0.5rem;
+}
+.cabecalho__conteiner-botao-1 {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 960px) {
+  .cabecalho__conteiner-botao-1 {
+    display: none;
+  }
+}
+.cabecalho__login {
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
+.cabecalho__botao {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #ff525d;
+  font-size: 100%;
+  transition: all 300ms ease-in-out;
+  margin-right: 0.5rem;
+}
+.cabecalho__botao:hover {
+  background-color: #ff7a85;
+  color: white;
+  cursor: pointer;
+}
+.cabecalho__botao-1 {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  border: 1px white solid;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  font-size: 100%;
+  transition: all 300ms ease-in-out;
+}
+.cabecalho__botao-1:hover {
+  background-color: white;
+  color: #ff525d;
+  cursor: pointer;
+}
+.cabecalho__hamburger {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .cabecalho__hamburger {
+    display: block;
+  }
+}
+.cabecalho__hamburger:hover {
+  cursor: pointer;
+}
+.cabecalho__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.cabecalho__titulo {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1.2rem;
+}
+.cabecalho__subtitulo {
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 2rem;
+}
+.h-menu {
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  width: 80vw;
+  padding: 1.5rem 0;
+  border-radius: 0.5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.h-menu__item {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.h-menu__item::after {
+  content: url(../images/icon-arrow-dark.svg);
+  margin-left: 0.5rem;
+}
+.h-menu__item:last-child {
+  margin: 0;
+}
+.h-menu__link {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #25252d;
+}
+.h-menu__tela {
+  background-color: #c8c8cb;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+.h-menu__tela-item {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.h-menu__tela-item:last-child {
+  margin: 0;
+}
+.h-menu__tela-link {
+  text-decoration: none;
+  color: #25252d;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  opacity: 1;
+}
+.h-menu__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h-menu__login {
+  color: #25252d;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.h-menu__botao {
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 1rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(45deg, #ff8f70, #ff3d54);
+}
+.h-menu__botao:hover {
+  cursor: pointer;
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  color: #c8c8cb;
+  background-color: #c8c8cb;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.appearOpacity1 {
+  animation: appearOpacity1 300ms ease-in-out forwards;
+}
+
+.disappearOpacity0 {
+  animation: disappearOpacity0 300ms ease-in-out forwards;
+}
+
+.visibilityHidden {
+  visibility: hidden;
+}
+
+.tela {
+  background-color: white;
+  padding: 1.5rem 1rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 40px;
+  box-shadow: 19px 29px 75px -38px;
+}
+.tela__item {
+  margin-bottom: 0.5rem;
+}
+.tela__item:last-child {
+  margin-bottom: 0;
+}
+.tela__link {
+  text-decoration: none;
+  color: #4b5862;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+.tela__link:hover {
+  color: #25252d;
+}
+
+.um {
+  left: 120px;
+}
+
+.dois {
+  left: 160px;
+}
+
+.tres {
+  left: 200px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.corpo {
+  padding: 10% 0;
+  background-image: url(../images/illustration-editor-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 700px 0px;
+}
+@media only screen and (max-width: 960px) {
+  .corpo {
+    background: none;
+  }
+}
+.corpo__titulo {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__titulo {
+    margin-top: 4rem;
+  }
+}
+.corpo__conteiner-img {
+  display: none;
+  width: 100%;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__conteiner-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+.corpo__conteiner {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4rem;
+  width: 40%;
+  margin-bottom: 30%;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__conteiner {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+.corpo__subtitulo {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__subtitulo {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.corpo__texto {
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  line-height: 1.5rem;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__texto {
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+.corpo__meio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: linear-gradient(45deg, #2c2d3f, #3f4164);
+  padding-top: 0%;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__meio {
+    margin-top: 25rem;
+  }
+}
+.corpo__conteiner-meio {
+  padding: 15% 10%;
+  width: 40%;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__conteiner-meio {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+.corpo__meio-img {
+  position: absolute;
+  left: 10%;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__meio-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .corpo__meio-img {
+    display: block;
+    top: -150px;
+    left: 0;
+    width: 360px;
+  }
+}
+.corpo__conteiner-meio-0 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: -200px -450px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__conteiner-meio-0 {
+    background-position: center -525px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.corpo__conteiner-meio-1 {
+  position: relative;
+  z-index: 2;
+  margin-top: 4rem;
+  padding: 5%;
+  width: 40%;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__conteiner-meio-1 {
+    height: 75vh;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.corpo__flex {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background: url(../images/illustration-laptop-desktop.svg) no-repeat;
+  background-position: -300px;
+}
+@media only screen and (max-width: 960px) {
+  .corpo__flex {
+    background: none;
+  }
+}
+
+.branco {
+  text-align: left;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+@media only screen and (max-width: 960px) {
+  .branco {
+    text-align: center;
+  }
+}
+
+.cinza {
+  color: #c8c8cb;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 960px) {
+  .cinza {
+    text-align: center;
+  }
+}
+
+.rodape {
+  background-color: black;
+  padding: 6%;
+  border-top-right-radius: 5rem;
+  display: flex;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 960px) {
+  .rodape {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.rodape__conteiner {
+  display: flex;
+}
+@media only screen and (max-width: 960px) {
+  .rodape__conteiner {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+.rodape__menu {
+  display: flex;
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .rodape__menu {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+.rodape__itens {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 300;
+  margin-left: 75%;
+}
+@media only screen and (max-width: 960px) {
+  .rodape__itens {
+    margin-left: 0;
+  }
+}
+.rodape__cabecalho {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 960px) {
+  .rodape__cabecalho {
+    margin-top: 2.5rem;
+  }
+}
+.rodape__item {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 960px) {
+  .rodape__item {
+    text-align: center;
+  }
+}
+.rodape__link {
+  color: #c8c8cb;
+  text-decoration: none;
+}
+.rodape__link:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

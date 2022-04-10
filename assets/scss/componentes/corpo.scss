@@ -1,0 +1,160 @@
+@use "../utilitarios" as *;
+
+.corpo{
+    padding: 10% 0;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 700px 0px;
+    @include celular{
+        background: none;
+    }
+    &__titulo{
+        font-size: 2rem;
+        text-align: center;
+        @include Overpass-600;
+        @include celular{
+            margin-top: 4rem;
+        }
+
+    }
+    &__conteiner-img{
+        display: none;
+        width: 100%;
+        margin-top: 3rem;
+        @include celular{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__conteiner{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 4rem;
+        width: 40%;
+        margin-bottom: 30%;
+        @include celular{
+            width: 100%;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    &__subtitulo{
+        font-size: 1.5rem;
+        @include Overpass-600;
+        margin-bottom: 4rem;
+        @include celular{
+            text-align: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    &__texto{
+        @include Overpass-300;
+        margin-bottom: 4rem;
+        line-height: 1.5rem;
+        @include celular{
+            text-align: center;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+
+        
+    }
+    &__meio{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: linear-gradient(45deg, $background-gradient1, $background-gradient2) ;
+        padding-top: 0%;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        @include celular{
+            margin-top: 25rem;
+        }
+    }
+    &__conteiner-meio{
+        padding: 15% 10%;
+        width: 40%;
+        @include celular{
+            width: 100%;
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    &__meio-img{
+        position: absolute;
+        left: 10%;
+        @include celular{
+            display: none;
+            
+        }
+        @include img-celular{
+            display: block;
+            top:-150px;
+            left: 0;
+            width: 360px;
+            
+        }
+    }
+    &__conteiner-meio-0{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-circles.svg);
+        background-position: -200px -450px;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include celular{
+            background-position: center -525px;
+            flex-direction: column;
+            align-items: flex-end;
+        }   
+
+    }
+    &__conteiner-meio-1{
+        position: relative;
+        z-index: 2;
+        margin-top: 4rem;
+        padding: 5%;
+        width: 40%;
+        @include celular{
+            height: 75vh;
+            width: 100%;
+            padding-left: 0%;
+            padding-right: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+
+        }
+    }
+    &__flex{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        background: url(../images/illustration-laptop-desktop.svg) no-repeat ;
+        background-position: -300px;
+        @include celular{
+            background: none;
+        }
+    }
+}
+.branco{
+    text-align: left;
+    color: $branco;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    @include celular{
+        text-align: center;
+    }
+}
+.cinza{
+    color:$azul-cinza;
+    font-size: 1.1rem;
+    @include celular{
+        text-align: center;
+    }
+}

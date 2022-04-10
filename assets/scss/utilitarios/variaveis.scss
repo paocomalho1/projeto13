@@ -1,0 +1,51 @@
+//cores
+
+$vermelho-claro:hsl(356, 100%, 66%);
+$vermelho-muito-claro:hsl(355, 100%, 74%);
+$azul-dark:hsl(208, 49%, 24%);
+$branco:hsl(0, 0%, 100%);
+$azul-cinza:hsl(240, 2%, 79%);
+$azul-cinza-dark:hsl(207, 13%, 34%);
+$azul-escuro-dark:hsl(240, 10%, 16%);
+
+//gradiente
+
+$plano-de-fundo-gradiente1:hsl(13, 100%, 72%);
+$plano-de-fundo-gradiente2:hsl(353, 100%, 62%);
+
+//background gradiente body
+
+$background-gradient1:hsl(237, 17%, 21%);
+$background-gradient2:hsl(237, 23%, 32%);
+
+//fontes
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap');
+
+@mixin Overpass-300 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 300;    
+}
+@mixin Overpass-600 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+@mixin Ubuntu-400{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+@mixin Ubuntu-500{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+@mixin Ubuntu-700{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}

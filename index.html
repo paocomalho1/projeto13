@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="h-menu visibilityHidden">
+      <ul class="h-menu__itens">
+        <li class="h-menu__item"><a href="#" class="h-menu__link" onclick="appear1()" >Product</a></li>
+        <ul class="h-menu__tela displayNone" id="a1">
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Overview</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Pricing</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Marketplace</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Features</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Integrations</a></li>
+        </ul>
+        <li class="h-menu__item"><a href="#" class="h-menu__link" onclick="appear2()">Company</a></li>
+        <ul class="h-menu__tela displayNone" id="a2">
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">About</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Team</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Blog</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Careers</a></li>
+        </ul>
+        <li class="h-menu__item"><a href="#" class="h-menu__link" onclick="appear3()">Connect</a></li>
+        <ul class="h-menu__tela displayNone" id="a3">
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Contact</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">Newsletter</a></li>
+          <li class="h-menu__tela-item"><a href="" class="h-menu__tela-link">LinkedIn</a></li>
+        </ul>
+      </ul>
+      <hr>
+      <div class="h-menu__conteiner">
+      <a href="" class="h-menu__login">Login</a>
+      <button class="h-menu__botao">Sign Up</button>
+    </div>
+    </div>
+    <nav class="cabecalho__menu">
+      <ul class="cabecalho__itens">
+        <img class="cabecalho__img" src="./assets/images/logo.svg" alt="">
+        <li class="cabecalho__item">
+          <a href="#" class="cabecalho__link" onclick="tela1()">Product</a>
+          <ul class="tela visibilityHidden" id="a">
+            <li class="tela__item">
+              <a href="" class="tela__link">Overview</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Pricing</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Marketplace</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Features</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Integrations</a>
+            </li>
+          </ul>
+        </li>
+        <li class="cabecalho__item">
+          <a href="#" class="cabecalho__link "onclick="tela2()">Company</a>
+          <ul class="tela visibilityHidden" id="b">
+            <li class="tela__item">
+              <a href="" class="tela__link">About</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Team</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Blog</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link">Careers</a>
+            </li>
+          </ul>
+        </li>
+        <li class="cabecalho__item">
+          <a href="#" class="cabecalho__link" onclick="tela3()">Connect</a>
+          <ul class="tela visibilityHidden" id="c">
+            <li class="tela__item">
+              <a href="" class="tela__link um">Contact</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link dois">Newsletter</a>
+            </li>
+            <li class="tela__item">
+              <a href="" class="tela__link tres">LinkedIn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="cabecalho__conteiner-botao-1">
+        <a href="" class="cabecalho__link">Login</a>
+        <button class="cabecalho__botao">Sign Up</button>
+      </div>
+      <svg class="cabecalho__hamburger" onclick="tela()" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+    </nav>
+    <div class="cabecalho__conteiner">
+      <h1 class="cabecalho__titulo">A modern publishing platform</h1>
+      <p class="cabecalho__subtitulo">Grow your audience and build your online brand</p>
+      <div class="cabecalho__conteiner-botao-2">
+        <button class="cabecalho__botao">Start for Free</button>
+        <button class="cabecalho__botao-1">Learn More</button>
+      </div>
+    </div>
+  </header>
+  <main class="corpo">
+    <h2 class="corpo__titulo">Designed for the future</h2>
+    <div class="corpo__conteiner-img">
+    <img src="./assets/images/illustration-editor-mobile.svg" alt="" class="corpo__img">
+  </div>
+    <div class="corpo__conteiner">
+      <h3 class="corpo__subtitulo">Introducing an extensible editor</h3>
+      <p class="corpo__texto">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+      <h3 class="corpo__subtitulo">Robust content management</h3>
+      <p class="corpo__texto">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+    <div class="corpo__meio">
+      <div class="corpo__conteiner-meio-0">
+        <img src="./assets/images/illustration-phones.svg" class="corpo__meio-img" alt="">
+      <div class="corpo__conteiner-meio-1">
+        <h2 class="corpo__titulo branco">State of the Art Infrastructure</h2>
+        <p class="corpo__texto cinza">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+    </div>
+    </div>
+    <div class="corpo__conteiner-img">
+      <img src="./assets/images/illustration-laptop-mobile.svg" alt="" class="corpo__img">
+    </div>
+    <div class="corpo__flex">
+    <div class="corpo__conteiner-meio">
+      <h2 class="corpo__subtitulo">Free, open, simple</h2>
+      <p class="corpo__texto">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h2 class="corpo__subtitulo">Powerful tooling</h2>
+      <p class="corpo__texto">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <img src="./assets/images/logo.svg" alt="" class="rodape__img">
+    <div class="rodape__conteiner">
+    <nav class="rodape__menu">
+    <ul class="rodape__itens">
+      <li class="rodape__item">
+        <p class="rodape__cabecalho">Product</p>
+      </li>
+      <li class="rodape__item"><a href="" class="rodape__link">Overview</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Pricing</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Marketplace</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Features</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Integrations</a></li>
+    </ul>
+    <ul class="rodape__itens">
+      <li class="rodape__item">
+        <p class="rodape__cabecalho">Company</p>
+      </li>
+      <li class="rodape__item"><a href="" class="rodape__link">About</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Team</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Blog</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Careers</a></li>
+    </ul>
+    <ul class="rodape__itens">
+      <li class="rodape__item">
+        <p class="rodape__cabecalho">Connect</p>
+      </li>
+      <li class="rodape__item"><a href="" class="rodape__link">Contact</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">Newsletter</a></li>
+      <li class="rodape__item"><a href="" class="rodape__link">LinkedIn</a></li>
+    </ul>
+  </nav>
+  </div>
+  </footer>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./assets/js/jquery.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
