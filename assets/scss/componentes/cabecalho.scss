@@ -8,6 +8,10 @@
     padding: 2.5rem;
     height: 100vh;
     border-bottom-left-radius: 5rem;
+    @include celular{
+        padding: 4rem 2.2rem;
+
+    }
     &__menu{
         display: flex;
         justify-content: space-between;
@@ -24,19 +28,19 @@
 
     }
     &__item{
+        transition: all 300ms ease-in-out;
         @include celular{
             display: none;
         }
+        &:hover{
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
     }
     &__link{
-        transition: all 300ms ease-in-out;
         position: relative;
         z-index: 1;
-        &::after{
-            content: url(../images/icon-arrow-light.svg);
-            margin-left: 0.5rem;
-        }
-        
         text-decoration: none;
         color: $branco;
         margin-right: 2rem;
@@ -94,6 +98,10 @@
     }
     &__hamburger{
         display: none;
+        transition: all 300ms ease-in-out;
+        height: 32px;
+        width: 28px;
+        background: url(../images/icon-hamburger.svg) no-repeat center;
         @include celular{
             display: block;
         }
@@ -116,6 +124,10 @@
         @include Overpass-300;
         color: $branco;
         margin-bottom: 1.2rem;
+        @include celular{
+            font-size: 2.2rem;
+    
+        }
 
     }
     &__subtitulo{
@@ -123,9 +135,16 @@
         @include Overpass-300;
         color: $branco;
         margin-bottom: 2rem;
+        @include celular{
+            margin-bottom: 3rem;
+    
+        }
 
     }
     &__conteiner-botao-2{
 
     }
+}
+.x{
+    background: url(../images/icon-close.svg) no-repeat center;
 }

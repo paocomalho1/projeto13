@@ -14,6 +14,7 @@
         @include Overpass-600;
         @include celular{
             margin-top: 4rem;
+            font-size: 1.9rem;
         }
 
     }
@@ -33,9 +34,9 @@
         width: 40%;
         margin-bottom: 30%;
         @include celular{
-            width: 100%;
-            padding-left: 0%;
-            padding-right: 0%;
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 4.5rem);
         }
     }
     &__subtitulo{
@@ -44,8 +45,8 @@
         margin-bottom: 4rem;
         @include celular{
             text-align: center;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            font-size: 1.35rem;
+            
         }
     }
     &__texto{
@@ -54,8 +55,8 @@
         line-height: 1.5rem;
         @include celular{
             text-align: center;
-            margin-right: 2rem;
-            margin-left: 2rem;
+            font-size: 1rem;
+            
         }
 
         
@@ -70,20 +71,20 @@
         border-bottom-left-radius: 5rem;
         @include celular{
             margin-top: 25rem;
+            width: 100vw;
         }
     }
     &__conteiner-meio{
         padding: 15% 10%;
         width: 40%;
         @include celular{
-            width: 100%;
-            padding-left: 0%;
-            padding-right: 0%;
+            width: calc(100% - 4.5rem);
+            
         }
     }
     &__meio-img{
         position: absolute;
-        left: 10%;
+        left: 2.0%;
         @include celular{
             display: none;
             
@@ -92,7 +93,7 @@
             display: block;
             top:-150px;
             left: 0;
-            width: 360px;
+            width: 375px;
             
         }
     }
@@ -110,6 +111,7 @@
             background-position: center -525px;
             flex-direction: column;
             align-items: flex-end;
+            
         }   
 
     }
@@ -121,10 +123,11 @@
         width: 40%;
         @include celular{
             height: 75vh;
-            width: 100%;
+            width: calc(100% - 4.5rem);
             padding-left: 0%;
-            padding-right: 0%;
+            padding-right: 10%;
             display: flex;
+            align-items: flex-start;
             flex-direction: column;
             justify-content: flex-end;
 
@@ -139,7 +142,11 @@
         background-position: -300px;
         @include celular{
             background: none;
+            justify-content: center;
         }
+    }
+    &__img{
+        width: 100%;
     }
 }
 .branco{
@@ -153,7 +160,7 @@
 }
 .cinza{
     color:$azul-cinza;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     @include celular{
         text-align: center;
     }
