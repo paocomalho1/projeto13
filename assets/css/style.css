@@ -476,7 +476,7 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo__conteiner-meio {
-    width: calc(100% - 4.5rem);
+    width: calc(100% - 5rem);
   }
 }
 .corpo__meio-img {
