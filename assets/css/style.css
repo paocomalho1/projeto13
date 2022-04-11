@@ -428,7 +428,7 @@ hr {
   .corpo__conteiner {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 4.5rem);
+    width: calc(100% - 5rem);
   }
 }
 .corpo__subtitulo {
@@ -583,6 +583,11 @@ hr {
   .rodape {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .rodape__img {
+    margin-top: 2rem;
   }
 }
 .rodape__conteiner {

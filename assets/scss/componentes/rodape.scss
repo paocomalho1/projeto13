@@ -11,6 +11,9 @@
         align-items: center;
     }
     &__img{
+        @include celular{
+            margin-top: 2rem;
+        }
 
     }
     &__conteiner{
