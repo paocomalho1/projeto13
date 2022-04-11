@@ -35,7 +35,7 @@
     &__itens{
         color: $branco;
         @include Overpass-300;
-        margin-left: 75%;
+        margin-left: 60%;
         @include celular{
             margin-left: 0;
         }

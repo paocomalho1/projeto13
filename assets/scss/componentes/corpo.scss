@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     background-position: 700px 0px;
     @include celular{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: none;
     }
     &__titulo{
@@ -34,9 +37,12 @@
         width: 40%;
         margin-bottom: 30%;
         @include celular{
+            padding-left: 0%;
+            padding-right: 0%;
             display: flex;
             flex-direction: column;
-            width: calc(100% - 5.2rem);
+            align-items: center;
+            width: 90%;
         }
     }
     &__subtitulo{
@@ -70,7 +76,7 @@
         border-top-right-radius: 5rem;
         border-bottom-left-radius: 5rem;
         @include celular{
-            margin-top: 25rem;
+            margin-top: 5rem;
             width: 100vw;
         }
     }
@@ -78,7 +84,9 @@
         padding: 15% 10%;
         width: 40%;
         @include celular{
-            width: calc(100% - 5rem);
+            padding-right: 0%;
+            padding-left: 0%;
+            width: 90%;
             
         }
     }
@@ -110,7 +118,7 @@
         @include celular{
             background-position: center -525px;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center;
             
         }   
 
@@ -122,12 +130,12 @@
         padding: 5%;
         width: 40%;
         @include celular{
-            height: 75vh;
-            width: calc(100% - 4.5rem);
+            height: 500px;
+            width: 90%;
             padding-left: 0%;
-            padding-right: 10%;
+            padding-right: 0%;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: column;
             justify-content: flex-end;
 

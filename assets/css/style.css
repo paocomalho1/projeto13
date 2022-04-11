@@ -391,6 +391,9 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: none;
   }
 }
@@ -426,9 +429,12 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo__conteiner {
+    padding-left: 0%;
+    padding-right: 0%;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 5.2rem);
+    align-items: center;
+    width: 90%;
   }
 }
 .corpo__subtitulo {
@@ -466,7 +472,7 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo__meio {
-    margin-top: 25rem;
+    margin-top: 5rem;
     width: 100vw;
   }
 }
@@ -476,7 +482,9 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo__conteiner-meio {
-    width: calc(100% - 5rem);
+    padding-right: 0%;
+    padding-left: 0%;
+    width: 90%;
   }
 }
 .corpo__meio-img {
@@ -511,7 +519,7 @@ hr {
   .corpo__conteiner-meio-0 {
     background-position: center -525px;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
   }
 }
 .corpo__conteiner-meio-1 {
@@ -523,12 +531,12 @@ hr {
 }
 @media only screen and (max-width: 960px) {
   .corpo__conteiner-meio-1 {
-    height: 75vh;
-    width: calc(100% - 4.5rem);
+    height: 500px;
+    width: 90%;
     padding-left: 0%;
-    padding-right: 10%;
+    padding-right: 0%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
   }
@@ -613,7 +621,7 @@ hr {
   color: white;
   font-family: "Overpass", sans-serif;
   font-weight: 300;
-  margin-left: 75%;
+  margin-left: 60%;
 }
 @media only screen and (max-width: 960px) {
   .rodape__itens {
@@ -646,6 +654,17 @@ hr {
 
 body {
   font-size: 16px;
+}
+
+.attribution {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
